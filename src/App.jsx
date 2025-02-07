@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Header, Footer } from "./Components/index";
+import { Header, Footer , Loading} from "./Components/index";
 import { login, logout } from "./store/authSlice";
 import authService from "./appwrite/auth";
 import { useDispatch } from "react-redux";
@@ -20,7 +20,7 @@ const App = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  return !loading ? <Header></Header> : null;
+  return !loading ? <Header></Header> : <Loading/>;
 };
 
 export default App;
