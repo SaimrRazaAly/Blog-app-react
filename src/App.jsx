@@ -20,7 +20,7 @@ const App = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  return !loading ? <Header></Header> : <Loading/>;
+  return !loading ? <Header/> : <Loading/>;
 };
 
 export default App;
