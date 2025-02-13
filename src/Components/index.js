@@ -7,6 +7,10 @@ import LogoutBtn from "./Header/LogoutBtn";
 import Button from "./Button";
 import PostCard from "./PostCard";
 import Select from "./Select";
+import Login from "./Login";
+import Input from "./Input";
+import RTE from "./RTE";
+
 
 export {
   Header,
@@ -18,4 +22,5 @@ export {
   Button,
   PostCard,
   Select,
+  Login
 };
